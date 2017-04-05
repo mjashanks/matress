@@ -1,0 +1,21 @@
+.balance {
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+table {
+    max-width:500px;
+    margin-top: 20px;
+}
+
+td, th {
+    padding-right: 30px;
+}
+
+th {
+    padding-bottom: 10px;
+}
+
+table>tr {
+    padding: 2px 0 2px 0;
+}
