@@ -3,14 +3,22 @@
 
     <span class="balance">Balance:&nbsp;&nbsp;&nbsp;&nbsp;<b>${balance} ETH</b></span>
 
+    <div class="search-panel">
+        <button class="check-button" click.delegate="FilterType('Credit')"><i class="fa fa-check" style="margin-right: 5px" aria-hidden="true"></i>Credit</button>
+        <button class="check-button" click.delegate="FilterType('Debit')"><i class="fa fa-check" style="margin-right: 5px" aria-hidden="true"></i>Debit</button>
+        <button class="check-button" click.delegate="FilterType('Gas')"><i class="fa fa-check" style="margin-right: 5px" aria-hidden="true"></i>Gas</button>
+    </div>
+
     <table>
         <tr>
             <th>Date</th>
+            <th>Type</th>
             <th>Description</th>
             <th>Amount (ETH)</th>
         </tr>
         <tr repeat.for="transaction of transactions">
             <td>${transaction.Date}</td>
+            <td>${transaction.Type}</td>
             <td>${transaction.Description}</td>
             <td>${transaction.Amount}</td>
         </tr>

@@ -19,3 +19,20 @@ th {
 table>tr {
     padding: 2px 0 2px 0;
 }
+
+.search-panel {
+    border-width: 1px;
+    border-color: dimgray;
+    border-radius: 2px;
+    padding: 10px;
+    border-style: solid;
+    width: 400px;
+    margin-top: 20px;
+}
+
+.check-button {
+    background: rgba(0, 0, 0, 0.1);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+}
